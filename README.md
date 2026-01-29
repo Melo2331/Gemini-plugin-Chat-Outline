@@ -1,18 +1,38 @@
 # Gemini-plugin-Chat-Outline
 一个为 Gemini 网页版提供提问目录导航的 Chrome 插件
-🌟 功能特性 (Features)
-自动索引：智能识别 user-query 标签，自动提取提问文本。
-精准去重：采用文本指纹识别逻辑，确保同一个提问不会在索引中出现多次。
-平滑跳转：点击索引项，页面自动平滑滚动至目标提问位置，并伴有短暂的视觉高亮提醒。
-深色模式适配：完美兼容 Gemini 默认的暗黑主题（Dark Theme），界面美观统一。
-实时更新：内置监控逻辑，无论是继续提问还是切换对话，索引列表都会自动同步。
-🛠️ 安装步骤 (Installation)
-下载代码：点击 GitHub 右上角的 Code -> Download ZIP 并解压，或直接克隆本仓库。
-打开扩展程序页面：在 Chrome 浏览器地址栏输入 chrome://extensions/ 并回车。
-开启开发者模式：勾选页面右上角的“开发者模式 (Developer mode)”。
-加载插件：点击“加载已解压的扩展程序 (Load unpacked)”，选择包含 manifest.json 的文件夹。
-开始使用：刷新你的 Gemini 页面，右侧即可看到“提问大纲”面板。
-📂 文件结构 (Project Structure)
-manifest.json: 扩展程序的配置文件（身份证）。
-content.js: 核心逻辑脚本，负责 DOM 抓取与交互。
-style.css: 导航面板的样式定义。
+# 🚀 Gemini Chat Navigator (Gemini 对话目录导航)
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Version](https://img.shields.io/badge/Version-1.0.0-blue.svg)](https://github.com/)
+
+这是一款轻量级的 Chrome 浏览器扩展程序，专为解决 **Gemini** 长对话中的翻页痛苦而生。它会自动在网页右侧生成一个提问大纲，让你像翻阅书本目录一样管理你的对话记录。
+
+---
+
+## ✨ 核心功能 (Highlights)
+
+* **🔍 智能索引**：自动捕获所有用户提问，过滤冗余信息。
+* **🎯 精准去重**：采用文本指纹识别，确保每个提问在目录中仅出现一次。
+* **🌊 平滑跳转**：点击目录项即可实现丝滑滚动定位，并伴有高亮视觉反馈。
+* **🌓 深度适配**：完美支持 Gemini 官方深色模式（Dark Mode）。
+* **⚡ 实时监听**：动态监测对话更新，无需手动刷新列表。
+
+---
+
+## 🛠️ 安装指南 (Installation)
+
+1.  **下载仓库** 点击右上角 `Code` -> `Download ZIP` 并解压到本地文件夹。
+2.  **进入扩展程序页面** 在 Chrome 地址栏输入 `chrome://extensions/`。
+3.  **开启开发者模式** 打开页面右上角的 **“开发者模式”** 开关。
+4.  **载入插件** 点击 **“加载已解压的扩展程序”**，选择包含 `manifest.json` 的文件夹。
+5.  **即刻使用** 刷新你的 Gemini 页面，右侧即会出现导航面板。
+
+---
+
+## 📂 文件说明 (Structure)
+
+```text
+GeminiNavigator/
+├── manifest.json   # 插件配置文件 (身份证)
+├── content.js      # 核心逻辑 (抓取与跳转)
+└── style.css       # 界面样式 (UI 布局)
