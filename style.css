@@ -1,0 +1,12 @@
+#gemini-outline-nav {
+    position: fixed; right: 20px; top: 80px; width: 200px;
+    background: #202124; color: #e8eaed; border: 1px solid #3c4043;
+    border-radius: 8px; z-index: 10000; font-family: 'Google Sans', sans-serif;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5); display: flex; flex-direction: column;
+}
+.nav-header { padding: 12px; font-weight: bold; border-bottom: 1px solid #3c4043; display: flex; justify-content: space-between; }
+#nav-list { max-height: 300px; overflow-y: auto; }
+.nav-item { padding: 10px; font-size: 12px; cursor: pointer; border-bottom: 1px solid #303134; }
+.nav-item:hover { background: #303134; color: #8ab4f8; }
+.nav-footer { padding: 8px; text-align: center; font-size: 11px; color: #8ab4f8; cursor: pointer; background: #292a2d; }
+#nav-close { cursor: pointer; color: #9aa0a6; }
